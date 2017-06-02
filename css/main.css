@@ -1,0 +1,213 @@
+/*滚动条loading end*/
+::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+    width: 8px;
+    border-radius: 0px;
+    background:rgba(100,100,100,0.0);
+}
+::-webkit-scrollbar:hover{
+    border-radius: 0px;
+    background:rgba(100,100,100,0.1);
+    cursor: all-scroll;
+}
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    border-radius: 6px;
+    background: rgba(180,180,180,0.3);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(180,180,180,0.7);
+}
+body,h1,h2,h3,h4,h5,h6,p,ol,ul{
+    margin: 0;
+}
+ol,ul{
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+em{
+    font-style:normal;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+.clear {  *zoom: 1;}
+.clear:before, .clear:after { display: table; content: ""; height: 0 !important; clear: both; visibility: hidden; }
+
+body,html{
+    height: 100%;
+    font-family: "Microsoft YaHei UI Light";
+}
+.menu{
+}
+.mainNav{
+
+}
+.content{
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items:stretch;
+    align-items:stretch;
+    overflow: hidden;
+}
+.contentL{
+    width: 200px;
+    overflow-y: auto;
+    background-color: #3c1058;
+    position: relative;
+}
+.contentLMain{
+    position: absolute;
+    top:0;
+    left: 0;
+    /*bottom: 0;*/
+    right: 0;
+    z-index: 9999;
+}
+#particles-js canvas{
+    opacity: 0.1;
+}
+.scrollBox{
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    overflow-y: auto;
+    position: relative;
+    top:0;}
+.contentR{
+    flex: 1;
+    overflow-y: auto;
+    /*background-color: #f5f5f5;*/
+}
+.logo{
+    line-height: 50px;
+    font-size: 18px;
+    background-color: #73329e;
+    color: #fff;
+    padding-left: 20px;
+}
+.mainNav>li>a{
+    display: block;
+    line-height:50px;
+    padding-left: 20px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.mainNav>li>a:hover{
+    padding-left: 28px;
+    background-color: rgba(97, 42, 132,.8);
+    font-weight:400;
+}
+.modularBox{
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+    margin:15px;
+    box-shadow: 0 1px 10px 1px rgba(80,80,80,.3);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s ;
+    -ms-transition: all 1s ;
+    -o-transition: all 1s ;
+    transition: all 1s ;
+    /*display: none;*/
+
+}
+.modularBox.on{
+    display: block;
+}
+.partBox{
+    margin: 10px auto;
+}
+
+@font-face {
+    font-family: "icon";
+    src: url('../fonts/iconfont.eot?t=1495782697229'); /* IE9*/
+    src: url('../fonts/iconfont.eot?t=1495782697229#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/iconfont.ttf?t=1495782697229') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+
+}
+
+.iconfont {
+    font-family: "icon" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-checkbox:before {
+    content: "\e640";
+}
+.icon-checkbox3:before {
+    content: "\e7b9";
+}
+.icon-radio1:before {
+    content: "\e670";
+}
+.icon-radio-2:before {
+    content: "\e627";
+}
+.icon-checkbox1:before {
+    content: "\e603";
+}
+.icon-checkbox2:before {
+    content: "\e608";
+}
+.icon-checkbox-1:before {
+    content: "\e625";
+}
+.icon-radio2:before {
+    content: "\e682";
+}
+.icon-radio-checkbox:before {
+    content: "\e662";
+}
+.icon-checkbox-3:before {
+    content: "\e600";
+}
+
+input[type="radio"], input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    font-family:"icon" !important;
+    vertical-align: middle;
+    border: none;
+    color: #808080;
+    font-size: 1.2rem;
+    margin-top: -4px;
+    margin-right: 3px;
+    line-height: 1;
+    outline: 0;
+    background: 0 0;
+    cursor: pointer;
+}
+input[type="radio"]:before{
+    content: "\e682";
+}
+input[type="radio"]:checked::before{
+    content: "\e670";
+    color: #2a7e9e;
+}
+
+input[type="checkbox"]:before{
+    content: "\e600";
+}
+input[type="checkbox"]:checked::before{
+    content: "\e600";
+    color: #2a7e9e;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+

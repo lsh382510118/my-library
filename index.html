@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>组件库-嗯哼</title>
+    <link rel="stylesheet" type="text/css" href="sass/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="header"></div>
+<div class="content">
+    <div class="menu contentL"   id="particles-js">
+        <div class="contentLMain">
+            <h1 class="logo">组件库</h1>
+            <ul class="mainNav" id="mainNav">
+                <li class="on"><a href="javascript:void(0);" link="btnModular">按钮</a></li>
+                <li><a href="javascript:void(0);" link="tableModular">表格</a></li>
+                <li><a href="javascript:void(0);" link="formModular">表单</a></li>
+                <li><a href="javascript:void(0);" link="listModular">列表</a></li>
+                <li><a href="javascript:void(0);" link="layerOutModular">布局</a></li>
+                <li><a href="javascript:void(0);" link="titleModular">标题</a></li>
+                <li><a href="javascript:void(0);" link="breadcrumbModular">面包屑</a></li>
+                <li><a href="javascript:void(0);" link="pluginModular">插件</a></li>
+                <li><a href="#">o-分页</a></li>
+                <li><a href="javascript:void(0);" link="moduleModular">someOther</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main contentR" id="mainBox">
+        <div class="scrollBox">
+            <!--标题模块-->
+            <h1 style="display: block" class="firstTitle" id="titleModular">标题模块</h1>
+            <div style="display: block" class="modularBox on">
+                 <!--左右布局-->
+                <span><i class="icon-checkbox iconfont" style="font-size: 34px"></i>标题模块标题模块</span>
+                <h2 class="secTitle">标题</h2>
+                <h1 class="firstTitle">一级标题</h1>
+                <h2 class="secTitle">二级标题</h2>
+                <p class="modularTitle clear"><span class="titleTxt">标题</span></p>
+                <p class="modularTitle clear">
+                    <span class="titleTxt">标题-more</span>
+                    <a href="javascript:void(0);" class="titleMore">more</a>
+                </p>
+
+
+            </div>
+            <!--按钮模块-->
+            <h1 style="display: block" class="firstTitle" id="btnModular">按钮模块</h1>
+            <div style="display: block" class="modularBox">
+                <h2 class="secTitle">按钮-默认大小</h2>
+                <div class="btnBox">
+                    <button class="btn">默认</button>
+                    <button class="btn btn-blue">蓝色</button>
+                    <button class="btn btn-linghtBlue">浅蓝</button>
+                    <button class="btn btn-deepBlue">深蓝</button>
+                    <button class="btn btn-green">绿色</button>
+                    <button class="btn btn-yellow">黄色</button>
+                    <button class="btn btn-red">红色</button>
+                </div>
+                <h2 class="secTitle">按钮-小按钮</h2>
+                <div class="btnBox">
+                    <button class="btn btn-min">默认</button>
+                    <button class="btn btn-blue btn-min">蓝色</button>
+                    <button class="btn btn-linghtBlue  btn-min">浅蓝</button>
+                    <button class="btn btn-deepBlue  btn-min">深蓝</button>
+                    <button class="btn btn-green  btn-min">绿色</button>
+                    <button class="btn btn-yellow  btn-min">黄色</button>
+                    <button class="btn btn-red  btn-min">红色</button>
+                </div>
+                <h2 class="secTitle">按钮-大按钮</h2>
+                <div class="btnBox">
+                    <button class="btn btn-large">默认</button>
+                    <button class="btn btn-blue btn-large">蓝色</button>
+                    <button class="btn btn-linghtBlue btn-large">浅蓝</button>
+                    <button class="btn btn-deepBlue btn-large">深蓝</button>
+                    <button class="btn btn-green btn-large">绿色</button>
+                    <button class="btn btn-yellow btn-large">黄色</button>
+                    <button class="btn btn-red btn-large">红色</button>
+                </div>
+                <h2 class="secTitle">按钮-线条按钮</h2>
+                <div class="btnBox">
+                    <button class="btn btn-line">默认</button>
+                    <button class="btn btn-blue btn-line">蓝色</button>
+                    <button class="btn btn-linghtBlue btn-line">浅蓝</button>
+                    <button class="btn btn-deepBlue btn-line">深蓝</button>
+                    <button class="btn btn-green btn-line">绿色</button>
+                    <button class="btn btn-yellow btn-line">黄色</button>
+                    <button class="btn btn-red btn-line">红色</button>
+                </div>
+                <h2 class="secTitle">按钮状态-禁用</h2>
+                <div class="btnBox">
+                    <button class="btn" disabled='disabled'>禁用</button>
+                </div>
+            </div>
+            <!--表格模块-->
+            <h1 style="display: block" class="firstTitle" id="tableModular">表格模块</h1>
+            <div style="display: block" class="modularBox">
+                <h2 class="secTitle">table-默认</h2>
+                <div class="tableBox">
+                    <table class="table">
+                        <tr>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                        </tr>
+                        <tr>
+                            <td>表格模块表格模块表格模块</td>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>XXXXX表格模块XX</td>
+                        </tr>
+                        <tr>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>格模</td>
+                            <td>格模</td>
+                        </tr>
+                    </table>
+                </div>
+                <h2 class="secTitle">table-线框(table-border)</h2>
+                <div class="tableBox">
+                    <table class="table table-border">
+                        <tr>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                        </tr>
+                        <tr>
+                            <td>表格模块表格模块表格模块</td>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>XXXXX表格模块XX</td>
+                        </tr>
+                        <tr>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>格模</td>
+                            <td>格模</td>
+                        </tr>
+                    </table>
+                </div>
+                <h2 class="secTitle">table-条纹(table-striped)</h2>
+                <div class="tableBox">
+                    <table class="table table-striped">
+                        <tr>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                        </tr>
+                        <tr>
+                            <td>表格模块表格模块表格模块</td>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>XXXXX表格模块XX</td>
+                        </tr>
+                        <tr>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>格模</td>
+                            <td>格模</td>
+                        </tr>
+                        <tr>
+                            <td>表格模块表格模块表格模块</td>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>XXXXX表格模块XX</td>
+                        </tr>
+                    </table>
+                </div>
+                <h2 class="secTitle">table-鼠标覆盖(table-hover)</h2>
+                <div class="tableBox">
+                    <table class="table table-hover">
+                        <tr>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                        </tr>
+                        <tr>
+                            <td>表格模块表格模块表格模块</td>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>XXXXX表格模块XX</td>
+                        </tr>
+                        <tr>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>格模</td>
+                            <td>格模</td>
+                        </tr>
+                        <tr>
+                            <td>表格模块表格模块表格模块</td>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>XXXXX表格模块XX</td>
+                        </tr>
+                    </table>
+                </div>
+                <h2 class="secTitle">table-头部背景(table-thcolor)</h2>
+                <div class="tableBox">
+                    <table class="table table-thcolor ">
+                        <tr>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                            <th>表头1</th>
+                        </tr>
+                        <tr>
+                            <td>表格模块表格模块表格模块</td>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>XXXXX表格模块XX</td>
+                        </tr>
+                        <tr>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>格模</td>
+                            <td>格模</td>
+                        </tr>
+                        <tr>
+                            <td>表格模块表格模块表格模块</td>
+                            <td>表格模块</td>
+                            <td>表格模块</td>
+                            <td>XXXXX表格模块XX</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tableBox">
+                    <table class="table table-thcolor table-th-r ">
+                        <tr>
+                            <th>表头1</th>
+                            <td>表格模块表格模块表格模块</td>
+                            <th>表头1</th>
+                            <td>表格模块表格模块表格模块</td>
+                        </tr>
+                        <tr>
+                            <th>表头1</th>
+                            <td>表格模块表格模块表格模块</td>
+                            <th>表头1</th>
+                            <td>XXXXX表格模块XX</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <!--表单模块-->
+            <h1 class="firstTitle" id="formModular">表单模块</h1>
+            <div class="modularBox on">
+                <h2 class="secTitle">输入框</h2>
+                <!--默认输入框-->
+                <div class="partBox">
+                    <input type="text" placeholder="默认输入框">
+                </div>
+                <!--属性输入框-->
+                <div class="partBox">
+                    <div>
+                        <label class="inputWrap clear">
+                            <span class="inputName">输入属性名</span>
+                            <input type="text" placeholder="属性输入框">
+                        </label>
+                    </div>
+                </div>
+                <!--单选和多选框-->
+                <h2 class="secTitle">单选和多选框</h2>
+                <div class="radiobox input-choose-box">
+                    <label class="input-choose-label"><input type="radio" name="radioGroud1" checked class="radio input-choose-item"> 单选1</label>
+                    <label class="input-choose-label"><input type="radio" name="radioGroud1" class="radio input-choose-item"> 单选2</label>
+                    <label class="input-choose-label"><input type="radio" name="radioGroud1" class="radio input-choose-item"> 单选3</label>
+                </div>
+                <div class="checkboxbox input-choose-box">
+                    <label class="input-choose-label"><input type="checkbox" name="checkboxGroud1" checked class="checkbox input-choose-item"> 多选1</label>
+                    <label class="input-choose-label"><input type="checkbox" name="checkboxGroud1" class="checkbox input-choose-item"> 多选2</label>
+                    <label class="input-choose-label"><input type="checkbox" name="checkboxGroud1"  class="checkbox input-choose-item"> 多选3</label>
+                </div>
+                <!--选择框-->
+                <h2 class="secTitle">选择框</h2>
+                <div class="">
+                    <select class="select">
+                        <option>选项1</option>
+                        <option>选项2</option>
+                        <option>选项3</option>
+                    </select>
+                </div>
+
+                <div class="selectbox" data-sel="custom">
+                    <div class="select-title">
+                        <span class="select-title-txt">请选择类型</span> <span class="select-ico"></span></div>
+                    <div class="select-main">
+                        <p class="select-item">类型1</p>
+                        <p class="select-item">类型2</p>
+                        <p class="select-item">好多字好多字好多字好多字好多字好多字好多字好多字</p>
+                        <p class="select-item">类型4</p>
+                    </div>
+                </div>
+
+                <!--搜索框-->
+                <h2 class="secTitle">搜索框</h2>
+                <div class="searchbox">
+                    <input type="text" placeholder="请输入搜索内容" class="searchTxt">
+                    <button class="searchBtn btn btn-blue">搜索</button>
+                </div>
+                <div class="searchbox search-inner">
+                        <input type="text" placeholder="请输入顾客姓名" name="cname"  class="searchTxt">
+                        <button type="submit" class="searchBtn btn btn-blue"></button>
+                </div>
+
+                <div class="searchbox search-grow clear">
+                        <input type="text" placeholder="请输入房号" name="crid"  class="searchTxt" >
+                        <button type="submit" class=""></button>
+                </div>
+
+                <div class="searchbox search-onlybtn clear">
+                    <button type="submit" class=""></button>
+                        <input type="text" placeholder="请输入顾客证件号">
+                </div>
+
+            </div>
+            <!--列表模块-->
+            <h1 class="firstTitle" id="listModular">列表模块</h1>
+            <div class="modularBox">
+                <h2 class="secTitle">默认列表</h2>
+                <!--默认列表-->
+                <div class="listBox">
+                    <ul class="list">
+                        <li>默认列表默认列表默认列表默认列表</li>
+                        <li>默认列表默认列表默认列表默认列表</li>
+                        <li>默认列表默认列表默认列表默认列表</li>
+                    </ul>
+                </div>
+                <!--downLine列表-->
+                <h2 class="secTitle">list-downLine</h2>
+                <div class="listBox">
+                    <ul class="list list-downLine">
+                        <li>list-downLine</li>
+                        <li>list-downLine</li>
+                        <li>list-downLine</li>
+                    </ul>
+                </div>
+                <!--time列表-->
+                <h2 class="secTitle">list-timeState</h2>
+                <div class="listBox">
+                    <ul class="list list-timeState">
+                        <li>list-downLine <span class="li-time">2017-04-20</span></li>
+                        <li>list-downLine <span class="li-time">2017-04-20</span></li>
+                        <li>list-downLine <span class="li-time">2017-04-20 14:37</span></li>
+                    </ul>
+                </div>
+                <!--time列表-->
+                <h2 class="secTitle">list-timeState</h2>
+                <div class="listBox">
+                    <ul class="list list-decor list-timeState">
+                        <li><span class="ico-decor thirIco"></span>ico-decor thirIco</li>
+                        <li><span class="ico-decor circle"></span>ico-decor circle</li>
+                        <li><span class="ico-decor circle"></span>ico-decor circle  <span class="li-time">2017-04-20 14:37</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--布局模块-->
+            <h1 class="firstTitle" id="layerOutModular">布局模块</h1>
+            <div class="modularBox">
+                <!--左右布局-->
+                <h2 class="secTitle">左右布局</h2>
+                <div class="lFixRAda">
+                    <div class="lFix">lFix</div>
+                    <div class="RAda">RAda</div>
+                </div>
+                <!--左中右布局-->
+                <h2 class="secTitle">左中右布局</h2>
+                <div class="lFixRAda">
+                    <div class="lFix">lFix</div>
+                    <div class="RFix">RFix</div>
+                    <div class="MAda">MAda</div>
+                </div>
+
+            </div>
+            <!--面包屑模块-->
+            <h1 class="firstTitle" id="breadcrumbModular">面包屑模块</h1>
+            <div class="modularBox">
+                <ul class="breadcrumb">
+                    <li><a href="#">home</a> <span class="divider">/</span></li>
+                    <li><a href="#">fiest</a> <span class="divider">/</span></li>
+                    <li class="active">Sec</li>
+                </ul>
+                <ul class="breadcrumb">
+                    <li><a href="#">home</a> <span class="divider">/</span></li>
+                    <li class="active">Last</li>
+                </ul>
+            </div>
+            <!--插件模块-->
+            <h1 class="firstTitle" id="pluginModular">插件模块</h1>
+            <div class="modularBox">
+                <div  class="pluginBox">
+                    <a class="pluginTitle" href="http://www.SuperSlide2.com/">SuperSlide V2.1</a>
+                    <div class="pluginDetail"><span>作用:</span><p>网站上常用的“焦点图/幻灯片”“Tab标签切换”“图片滚动”“无缝滚动”</p> </div>
+                </div>
+                    <div  class="pluginBox">
+                        <a class="pluginTitle" href="https://github.com/jquery-backstretch/jquery-backstretch">jquery.backstretch.min V2.0.3</a>
+                        <div class="pluginDetail"><span>作用:</span><p>1.图片背景自适应;2.自动变换背景图片;3.</p> </div>
+                    </div>
+            </div>
+            <!--个人模块-->
+            <h1 style="display: block" class="firstTitle" id="moduleModular">个人模块</h1>
+            <div style="display: block" class="modularBox on">
+                <div class="tab-wrap clear">
+                    <a href="javascript:;" class="tab-item active">tab1</a>
+                    <a href="javascript:;" class="tab-item">tab2</a>
+                    <a href="javascript:;" class="tab-item">tab3</a>
+                    <a href="javascript:;" class="tab-item">tab4</a>
+                </div>
+                <div class="tab-content-wrap">
+                    <div class="accordion-panel clear"  id="accordion">
+                        <div class="accordion-item banner-img banner1"></div>
+                        <div class="accordion-item banner-img banner2"></div>
+                        <div class="accordion-item banner-img banner3"></div>
+                        <div class="accordion-item banner-img banner4"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--<script src="js/jquery.js&js/slide.js&js/particles.js&js/app.js&js/app.js"></script>-->
+<script src="js/jquery.js"></script>
+<script src="js/slide.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    var a = document.getElementById('accordion');
+    accordion(a);
+    selectPlugin();
+</script>
+</body>
+</html>

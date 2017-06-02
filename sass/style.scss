@@ -1,0 +1,747 @@
+@charset "UTF-8";
+$blue: #4470dd; //蓝色
+$blue-hover: #3962c7; //蓝色-hover
+$linghtBlue: #008fd5; //浅蓝色
+$linghtBlue-hover: #1278ab; //浅蓝色-hover
+$deepBlue: #1255a0; //深蓝色
+$deepBlue-hover: #114a8a; //深蓝色-hover
+$green: #077d15; //绿色
+$green-hover: #086313; //绿色-hover
+$yellow: #ffbb42; //绿色
+$yellow-hover: #eaab39; //绿色-hover
+$red: #b40505; //绿色
+$red-hover: #a71616; //绿色-hover
+
+//字体颜色
+$mainColor: #333;
+$secColor: #666;
+$thirColor: #999;
+//行高
+$inputLineHeight: 38px;
+//边框颜色
+$borderColor: #e3e3e3;
+
+$txthoverbg:#f8f8f8;
+$mainBg: #f5f5f5;
+$secBg: #f8f8f8;
+$thirBg: #999;
+
+@mixin trans($prop,$time,$animete:linear){
+  -webkit-transition: $prop $time $animete;
+  -moz-transition: $prop $time $animete ;
+  -ms-transition: $prop $time $animete ;
+  transition: $prop $time $animete ;
+}
+
+@mixin transf-rotate($deg){
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+//---------------------------按钮模块(start)-------------------------------
+*{
+  box-sizing: border-box;
+}
+body {
+  color: $mainColor;
+  background-color: $mainBg;
+}
+input,button {
+  border:none;
+  outline:none;
+}
+.btn {
+  height: $inputLineHeight;
+  line-height: $inputLineHeight;
+  padding: 0 1.5em;
+  border: 1px solid $borderColor;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  margin: 5px;
+  @include trans(all,0.4s);
+  &.btn-min {
+    font-size: 0.8em;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 1em;
+  }
+  &.btn-large{
+    font-size: 1em;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 2em;
+    min-width: 200px;
+  }
+  &:hover {
+    background-color: #f8f8f8;
+    cursor: pointer;
+  }
+  .btn-line:hover {
+    background-color: #fff;
+    background-color: transparent;
+  }
+  &[disabled], &[disabled='disabled'] {
+    cursor: not-allowed;
+    background-color: #f1f1f1;
+    color: #aaa;
+  }
+}
+
+.btn-blue, .btn-linghtBlue, .btn-deepBlue, .btn-green, .btn-yellow, .btn-red {
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.btn-blue.btn-line, .btn-linghtBlue.btn-line, .btn-deepBlue.btn-line, .btn-green.btn-line, .btn-yellow.btn-line, .btn-red.btn-line {
+  background-color: #fff;
+  background-color: transparent;
+}
+
+.btn-blue {
+  background-color: $blue;
+  &.btn-line {
+    color: #4470dd;
+    border: 1px solid $blue;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $blue-hover;
+  }
+}
+
+.btn-linghtBlue {
+  background-color: $linghtBlue;
+  &.btn-line {
+    color: $linghtBlue;
+    border: 1px solid $linghtBlue;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $linghtBlue-hover;
+  }
+}
+
+.btn-deepBlue {
+  background-color: $deepBlue;
+  &.btn-line {
+    color: $deepBlue;
+    border: 1px solid $deepBlue;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $deepBlue-hover;
+  }
+}
+
+.btn-green {
+  background-color: $green;
+  &.btn-line {
+    color: $green;
+    border: 1px solid $green;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $green-hover;
+  }
+}
+
+.btn-yellow {
+  background-color: $yellow;
+  &.btn-line {
+    color: $yellow;
+    border: 1px solid $yellow;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $yellow-hover;
+  }
+}
+
+.btn-red {
+  background-color: $red;
+  &.btn-line {
+    color: $red;
+    border: 1px solid $red;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $red-hover;
+  }
+}
+//---------------------------按钮模块(end)-------------------------------
+
+//---------------------------表格模块(start)-------------------------------
+.table {
+  border-collapse: collapse;
+  border: 1px solid $borderColor;
+  width: 100%;
+  td,th {
+    padding: .75rem;
+    line-height: 1.5;
+    border: none;
+    border-top: 1px solid $borderColor;
+    font-size: 14px;
+    color: $secColor;
+  }
+  &.table-border{
+    td,th{
+      border-left: 1px solid $borderColor;
+    }
+  }
+  &.table-thcolor th{
+    background-color: #f1f1f1;
+  }
+  &.table-VAtop {
+    td,th{
+      vertical-align: top;
+    }
+  }
+  &.table-hover tr:hover td {
+    background-color: #f8f8f8;
+  }
+  &.table-striped tr:nth-child(2n+1) td {
+    background-color: #f8f8f8;
+  }
+}
+.table-th-l th {  text-align: left;}
+.table-th-c th { text-align: center; }
+.table-th-r th { text-align: right; }
+//---------------------------表格模块(end)-------------------------------
+
+//---------------------------表单模块(start)-------------------------------
+    //  ---输入框----
+input[type='text'] {
+  height:$inputLineHeight;
+  line-height: $inputLineHeight;
+  border: 1px solid $borderColor;
+  text-indent: 14px;
+  outline: none;
+  padding: 0;
+  @include trans(all,0.4s);
+}
+
+input[type='text']:focus {
+  border: 1px solid #dcc9e8;
+  box-shadow: 0 1px 4px 1px rgba(163, 107, 199, 0.2);
+}
+
+.inputWrap {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  height: $inputLineHeight;
+  .inputName {
+    color: #333;
+    width: 90px;
+    padding-right: 10px;
+    text-align: right;
+    border-radius: 4px 0 0 4px;
+    height: $inputLineHeight - 2;
+    line-height: $inputLineHeight - 2 ;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background-color: #f6f6f6;
+  }
+}
+
+.inputWrap > input[type='text'] {
+  padding: 0;
+  border-radius: 4px;
+  width: 100%;
+  text-indent: 120px;
+}
+//  ---单选多选框----
+
+.input-choose-box{
+   padding: 10px 0;
+  .input-choose-label + .input-choose-label{
+    padding-right:15px;
+    cursor: pointer;
+    :hover {
+      color: #999;
+    }
+  }
+  .input-choose-item{
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-bottom:1px;
+    height: 14px;
+    width: 14px;
+    margin-right: 4px;
+  }
+}
+//  ---下拉框----
+.select{
+  height: $inputLineHeight;
+  line-height: $inputLineHeight - 2px;
+  text-indent: 14px;
+  border: 1px solid $borderColor;
+  min-width: 140px;
+}
+.selectbox{
+  font-size: 14px;
+  margin: 10px 0;
+  height: $inputLineHeight;
+  border: 1px solid $borderColor;
+  width: 340px;
+  position: relative;
+  background-color: #fff;
+  cursor: pointer;
+  .select-title{
+    line-height: $inputLineHeight - 2px;
+    height: $inputLineHeight;
+    padding-left:14px;
+    padding-right:40px;
+    position: relative;
+    .select-title-txt{
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      white-space:nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .select-ico{
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 14px;
+    height: 14px;
+    width: 14px;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-top:8px solid $secColor;
+    border-bottom:8px solid transparent;
+    @include trans(all,0.4s);
+    display: block;
+    -webkit-transform-origin:8px 4px;
+    -moz-transform-origin:8px 4px;
+    -ms-transform-origin:8px 4px;
+    -o-transform-origin:8px 4px;
+    transform-origin:8px 4px;
+  }
+  &.show .select-ico{
+    @include transf-rotate(180deg);
+  }
+  &.show .select-main{
+    visibility: inherit;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .select-main{
+    visibility: hidden;
+    opacity: 0;
+    @include trans(all,0.4s,ease-in-out);
+    width: 340px;
+    position: absolute;
+    top:$inputLineHeight - 1px;
+    left: -1px;
+    background: #fff;
+    border-bottom:1px solid $borderColor;
+    border-left: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+    .select-item{
+      padding:8px 14px;
+      line-height: 26px;
+      @include trans(all,0.4s,ease-in-out);
+      &:hover{
+        background-color: $txthoverbg;
+      }
+    }
+
+  }
+}
+
+//  ---搜索框----
+.searchbox{
+  width: 21em;
+  margin: 10px 0;
+  position: relative;
+  padding-right: 5.2em;
+  &.search-inner{
+    padding-right:0;
+  }
+}
+.searchTxt{
+  width: 100%;
+  &:focus {
+    border: 2px solid #c5464a !important;
+    box-shadow: 0 1px 4px 1px rgba(236, 177, 179,.6) !important;
+  }
+}
+.searchBtn.btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid $borderColor;
+  height: $inputLineHeight;
+  line-height: $inputLineHeight;
+  width: 5em;
+  margin: 0;
+  padding: 0;
+
+}
+
+.search-inner {
+  input {
+    width: 100%;
+    border:2px solid #c5464a;
+    border-radius:5px;
+    background:transparent;
+    top:0;
+    right:0;
+  }
+  .searchBtn {
+    background:#c5464a;
+    border: 0;
+    border-radius:0 5px 5px 0;
+    width:60px;
+    top:2px;
+    right:0;
+    height: 34px;
+    &:hover{
+      cursor: pointer;
+    }
+    &:before {
+      content:"搜索";
+      font-size:13px;
+      color:#F9F0DA;
+    }
+  }
+}
+
+.search-grow {
+  padding-right:0;
+  input {
+    width:250px;
+    border-radius:$inputLineHeight;
+    border:2px solid #324B4E;
+    background:#F9F0DA;
+    @include trans(all,0.4s,ease-in-out);
+    float:right;
+    &:focus {
+      width: 100%;
+    }
+  }
+  button {
+    height: $inputLineHeight;
+    width: $inputLineHeight;
+    cursor: pointer;
+    position: absolute;
+    background:none;
+    top:-2px;
+    right:20px;
+    &:before {
+      content:"Search";
+      font-family:FontAwesome;
+      color:#324b4e;
+    }
+  }
+}
+
+.search-onlybtn{
+  height:$inputLineHeight;
+  position: relative;
+  width: 18em;
+  padding-right:0;
+  input {
+    width:0;
+    padding:0 42px 0 15px;
+    border: 0;
+    border-bottom:2px solid transparent;
+    background:transparent;
+    @include trans(all,0.4s,ease-in-out);
+      position:absolute;
+      top:0;
+      right:0;
+    z-index:2;
+    &:focus {
+      width:100%;
+      z-index:1;
+      height: 38px;
+      box-shadow: none !important;
+      border: none !important;
+      border-bottom:2px solid #F9F0DA !important;
+    }
+  }
+  button {
+    height: $inputLineHeight;
+    width: 3em;
+    cursor: pointer;
+    position: absolute;
+    background:#683B4D;
+    top:0;
+    left:100%;
+    &:before {
+      content:"Go";
+      font-family:FontAwesome;
+      font-size:16px;
+      color:#F9F0DA;
+    }
+    &:focus + input{
+      width:100%;
+      z-index:1;
+      height: 38px;
+      box-shadow: none !important;
+      border: none !important;
+      border-bottom:2px solid #F9F0DA !important;
+    }
+  }
+}
+
+//---------------------------表单模块(end)-------------------------------
+
+//---------------------------列表模块(star)-------------------------------
+.listBox{
+
+}
+.list>li{
+  height: 34px;
+  line-height:34px;
+  font-size: 14px;
+  color: $secColor;
+}
+.list-downLine.list>li{
+  border-width:1px;
+  border-color: $borderColor;
+  border-bottom-style: solid;
+}
+.list-timeState{
+}
+.list-timeState>li{
+  padding-right:120px;
+  position: relative;
+}
+.li-time{
+  position: absolute;
+  right: 0;
+  padding-right:10px;
+  font-size: 12px;
+  line-height: inherit;
+  height: inherit;
+  color: $thirColor;
+}
+.list-decor>li{
+  position: relative;
+  padding-left:14px;
+}
+.ico-decor{
+  position: absolute;
+  left:0;
+  padding-left:10px;
+  line-height: inherit;
+  height: inherit;
+}
+.thirIco.ico-decor{
+  border-right: 0;
+  height: 0;
+  line-height: 0;
+  border-left: 4px solid $blue;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  top: 50%;
+  left:5px;
+  margin-top: -5px;
+}
+.ico-decor.circle{
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  padding:0;
+  background-color: $red;
+  top: 50%;
+  left:2px;
+  margin-top: -3px;
+}
+//---------------------------列表模块(end)-------------------------------
+
+//---------------------------布局模块(star)-------------------------------
+.lFixRAda {  *zoom: 1;}
+.lFixRAda:before, .lFixRAda:after { display: table; content: ""; height: 0 !important; clear: both; visibility: hidden; }
+.lFix{
+  width: 200px;
+  float: left;
+  position: relative;
+  //css
+  height: 200px;
+  background-color: $linghtBlue;
+  color: #fff;
+}
+.RAda{
+  margin-left:200px;
+  //cc
+  height: 200px;
+  background-color: $deepBlue;
+  color: #fff;
+}
+.RFix{
+  float: right;
+  width: 200px;
+  position: relative;
+  //css
+  height: 200px;
+  background-color: $linghtBlue;
+  color: #fff;
+}
+.MAda{
+  margin-left:200px;
+  margin-right:200px;
+  //cc
+  height: 200px;
+  background-color: $deepBlue;
+  color: #fff;
+}
+//---------------------------布局模块(end)-------------------------------
+
+//---------------------------标题模块(star)-------------------------------
+.firstTitle {
+  line-height: 50px;
+  padding-left:10px;
+  font-size: 24px;
+  color: $secColor;
+  border-bottom: 1px solid $borderColor;
+  background-color: #fff;
+  text-align: center;
+}
+.secTitle {
+  padding: 10px;
+  font-size: 16px;
+  color: $secColor;
+  text-align: center;
+  width: 300px;
+  margin: 10px auto;
+  border-radius: 100px;
+  border: 1px solid $borderColor;
+}
+.modularTitle{
+  border-bottom:2px solid $borderColor;
+}
+.modularTitle .titleTxt{
+  float: left;
+  height: 40px;
+  line-height: 38px;
+  border-bottom:2px solid $blue;
+  margin-bottom:-2px;
+  padding: 0  1.2em;
+}
+.titleMore{
+  float: right;
+  height: 38px;
+  line-height: 38px;
+  padding:0 1em;
+  margin-right:10px;
+}
+//---------------------------标题模块(end)-------------------------------
+//---------------------------面包屑模块(star)-------------------------------
+
+.breadcrumb{
+  padding: 8px 15px;
+  margin: 0 0 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.breadcrumb>li {
+  display: inline-block;
+  *display: inline;
+  text-shadow: 0 1px 0 #fff;
+}
+.breadcrumb>.active {
+  color: #999;
+}
+//---------------------------面包屑模块(end)-------------------------------
+
+//---------------------------插件模块(star)-------------------------------
+.pluginTitle{
+  content: '8828';
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  font-weight:bold;
+}
+.pluginDetail{
+  position: relative;
+  padding-left:100px;
+  border: 1px solid $borderColor;
+  margin-bottom:20px;
+}
+.pluginDetail>span{
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width: 80px;
+  padding-right:10px;
+  line-height:40px;
+  height: 40px;
+  background-color: $mainBg;
+  text-align: right;
+}
+.pluginDetail>p{
+  line-height: 40px;
+  border: none;
+  font-size: 14px;
+  color: $secColor;
+}
+//---------------------------插件模块(end)-------------------------------
+//---------------------------个人插件模块(start)-------------------------------
+.tab-wrap{
+  border-bottom: 2px solid #e3e3e3;
+}
+.tab-item{
+  float: left;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 2px solid #e3e3e3;
+  margin-bottom: -2px;
+  padding: 0 1.2em;
+  color: #666;
+  @include trans(all,0.4s,ease-in-out);
+  &.active{
+    color: #4470dd;
+    border-bottom: 2px solid #4470dd;
+  }
+  &:hover{
+    color: #4470dd;
+    cursor: pointer;
+  }
+}
+.accordion-panel{
+  width: 100%;
+  margin: 20px auto;
+  height: 160px;
+  overflow: hidden;
+  white-space: nowrap;
+  .accordion-item{
+    width: 25%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    background-size: 100% 100%;
+    &.on{
+      width: 40%;
+      cursor: pointer;
+    }
+  }
+  &:hover .accordion-item:hover{
+    width: 40%;
+    cursor: pointer;}
+  &:hover .accordion-item{
+    width: 20%;
+  }
+}
+.banner1{background: url(../images/1.jpg) no-repeat fixed top left;}
+.banner2{background: url(../images/2.jpg) no-repeat fixed top left;}
+.banner3{background: url(../images/3.jpg) no-repeat fixed top left;}
+.banner4{background: url(../images/4.jpg) no-repeat fixed top left;}
+
+
+
+//---------------------------个人插件模块(end)-------------------------------
